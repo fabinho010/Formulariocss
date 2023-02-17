@@ -1,0 +1,143 @@
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #34495E;
+    margin-left: 35%;
+    margin-right: 30%;
+    border-radius: 5px;
+    animation-duration: 1.5s;
+    animation-name: slidein2;
+}
+/*animacion del h2*/
+
+@keyframes slidein2{
+    from{
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date]
+,select {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+
+}
+
+select,
+input[type=date],
+input [type=checkbox],
+input[type=radio]{
+    cursor: pointer;
+}
+
+input[type=submit]{
+    float: right;
+    width: 20%;
+    height: 50px;
+    background-color: #EB984E ;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=reset]{
+    float: left;
+    width: 20%;
+    height: 50px;
+    background-color: #34495E ;
+    color: white;   
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input:hover{
+    background-color: #F4F6F6;
+    border-color: black;
+}
+
+input:focus{
+    background-color: #FDF2E9;
+}
+select:focus{
+    background-color: #FDF2E9; 
+}
+
+
+input[type=submit]:hover{
+        background-color: #FAD7A0;
+}
+input[type=reset]:hover{
+    background-color: #5D6D7E;
+}
+
+select:hover{
+    background-color: #F4F6F6;
+    border-color: black;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+fieldset{
+    border-color: white;
+    width: 70%;
+}
+
+.container{
+    border-radius: 50px;
+    background-color:#EAFAF1 ;
+    padding: 30px;
+    margin-bottom: 20%;
+    margin-left: 35%;
+    margin-right: 30%;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+/* Defino el movimineto como quiero que lo haga*/
+@keyframes slidein{
+    from{
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.fila{
+    margin-top: 10px;
+
+}
+.columna-1{
+
+     float: left;
+     width: 40%;
+     margin-top: 7px;
+
+}
+.columna-2{
+        width: 85%;
+        margin-top: 7px;
+    
+}
+
+/* Esto me ajusta las filas*/
+.fila:after{
+    content: "";
+    display: table;
+    clear: both;
+}
